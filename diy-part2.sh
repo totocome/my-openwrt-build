@@ -18,4 +18,8 @@
 
 # Modify hostname
 #sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
+# 添加 OpenClash 源代码
 git clone https://github.com/vernesong/OpenClash package/luci-app-openclash
+
+# 如果编译缺依赖，可以加这一句（建议）
+git clone https://github.com/immortalwrt/luci.git package/luci-app-openclash-deps
